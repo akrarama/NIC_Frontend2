@@ -1,0 +1,420 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* manrope-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/manrope-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/manrope-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/manrope-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/manrope-v15-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Manrope";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19.6px;
+  font-size: "normal";
+  letter-spacing: 1px;
+  color: #072047;
+  background-color: #fbecdd;
+}
+/*header styles start*/
+
+.logo {
+  margin-right: 85px;
+}
+.header a {
+  color: #072047;
+}
+.menu {
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.menu li {
+  margin-right: 32px;
+  font-size: 14px;
+}
+
+.icon {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  margin-right: 25px;
+  margin-left: auto;
+  gap: 30px;
+}
+.icon1 {
+  margin-right: 25px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding-top: 37px;
+}
+.container {
+  padding-left: 160px;
+  padding-right: 160px;
+  width: 1500px;
+  margin: 0 auto;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*header styles end*/
+
+/*main styles start*/
+.intro {
+  height: 100vh;
+
+  padding-top: 260px;
+}
+.inrto_title {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 105.6px;
+  margin-bottom: 26px;
+}
+.intro_subtitle {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 41.6px;
+  margin-bottom: 26px;
+}
+
+.first_button {
+  padding: 12px 24px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #072047;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px 4px #f5ad84;
+}
+
+.first_button:hover {
+  background-color: rgb(23, 113, 241);
+}
+
+.first_button:active {
+  background-color: rgb(23, 113, 241);
+  box-shadow: 0 5px #f5ad84;
+  transform: translateY(px);
+}
+
+.profile {
+  display: flex;
+  float: right; /* Обтекание картинки по левому краю */
+  padding-left: 10px; /* Отступ слева */
+  padding-bottom: 10px;
+}
+/*main styles end*/
+
+
+
+/*generic-content1 styles start*/
+.generic-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+.generic-content {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.generic-content ul {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.generic-content ul li {
+  margin-right: 200px;
+}
+
+.generic_cards {
+  margin-bottom: 100px;
+}
+/*generic-content1 styles end*/
+
+
+/*generic-content1 styles end*/
+.container_text {
+  color: #f5ad84;
+  font-size: 14px;
+  margin-bottom: 11px;
+}
+.container_main_text {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 70.6px;
+}
+/*generic-content2 styles end*/
+
+
+/*pic-container styles start*/
+
+.pic-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.pic {
+  width: 100%;
+  padding: 10px;
+
+}
+/*pic-container styles end*/
+
+/*generic-content4 styles start*/
+
+#generic-content4 {
+  background-color: bisque;
+  padding: 90px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.last_header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 70.2px;
+}
+.last_p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 43.2px;
+}
+.button_last {
+  padding: 12px 24px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #072047;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px 4px #f5ad84;
+  margin: auto;
+  display: block;
+}
+
+.button_last:hover {
+  background-color: rgb(23, 113, 241);
+}
+
+.button_last:active {
+  background-color: rgb(23, 113, 241);
+  box-shadow: 0 5px #f5ad84;
+  transform: translateY(px);
+}
+
+/*generic-content4 styles end*/
+
+hr {
+  width: 85%;
+}
+
+
+
+/* FOOTER START */
+footer {
+  display: flex;
+  align-items: center;
+
+  padding-left: 160px;
+  padding-right: 160px;
+  padding: 32px;
+  padding-bottom: 70.5px;
+}
+footer p {
+  display: flex;
+  flex: 1; /* Takes up the available space */
+  display: flex;
+  padding-left: 160px;
+}
+.link1 {
+
+  padding-right: 32px;
+  padding-left: 760px;
+  text-decoration: none;
+}
+.link2 {
+  padding-right: 90px;
+  text-decoration: none;
+}
+/* FOOTER END */
